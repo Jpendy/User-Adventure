@@ -2,7 +2,7 @@ const monsters = {
     id: 'monsters',
     title: 'A Den of Monsters',
     map: {
-        top: '89%',
+        top: '45%',
         left: '44%'
     },
     image: 'monsters.jpg',

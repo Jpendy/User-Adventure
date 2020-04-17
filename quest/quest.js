@@ -11,6 +11,9 @@ const labels = document.querySelectorAll('label');
 const form = document.querySelector('form');
 const description = document.getElementById('description');
 const img = document.getElementById('image');
+//const formButton = document.getElementById('form-button');
+const resultSpan = document.getElementById('result-span');
+const backToMapButton = document.getElementById('back-to-map-button');
 
 const params = new URLSearchParams(window.location.search);
 
@@ -34,11 +37,39 @@ form.addEventListener('submit', (event) => {
     const choices = quest.choices;
     const choice = findById(choiceId, choices);
 
-    description.textContent = choice.result;
+    resultSpan.textContent = choice.result;
 
     updateStats(user, quest, choice);
 
     localStorage.setItem('USER', JSON.stringify(user));
+
+    form.classList.toggle('hidden');
+
+    const link = document.createElement('a');
+    link.textContent = 'Go Back To Map';
+    link.classList.add('linkStyle');
+    resultSpan.appendChild(link);
+
+    link.addEventListener('click', () => {
+        location.href = '../map/';
+
+    });
+    updateStats(user, quest, choice);
+
+    if (user.hp < 1){
+        link.classList.add('hidden');
+        const resultsLink = document.createElement('a');
+        resultsLink.textContent = 'See Results';
+        resultsLink.classList.add('linkStyle');
+        resultSpan.appendChild(resultsLink);
+
+        resultsLink.addEventListener('click', () => {
+            location.href = '../results';
+        });
+    }
+
+    
+    
 });
 
 

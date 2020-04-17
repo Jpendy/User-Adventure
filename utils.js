@@ -30,6 +30,11 @@ export function uploadUser(user){
     healthSpan.textContent = `Health: ${user.hp}`;
     goldSpan.textContent = `Gold: ${user.gold}`;
 
+    if (user.hp < 1) {
+        healthSpan.style.color = 'red';
+        healthSpan.textContent = 'YOU HAVE DIED';
+    }
+
     playerStatsContainer.append(classSpan, nameSpan, healthSpan, goldSpan);
     body.appendChild(playerStatsContainer);
 }
@@ -45,4 +50,11 @@ export function updateStats(user, quest, choice){
 
     healthSpan.textContent = `Health: ${user.hp}`;
     goldSpan.textContent = `Gold: ${user.gold}`;
+
+    if (user.hp < 1) {
+        healthSpan.style.color = 'red';
+        healthSpan.textContent = 'YOU HAVE DIED';
+    }
+
 }
+

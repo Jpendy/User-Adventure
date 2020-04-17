@@ -5,11 +5,18 @@ body {
     
 }
 
-.player-stats {
-    position: absolute;
-    font-size: 15px;
+.player-stats { 
+    position: fixed;
+    background: lightseagreen;
+    font-size: 12px;
     line-height:10px;
     top: 10px;
     right: 10px;
+    padding: 25px 50px;
+    border-radius: 60%;
+}
 
+
+.hidden {
+    display: none;
 }
