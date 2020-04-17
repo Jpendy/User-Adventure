@@ -1,16 +1,15 @@
 import quests from '../data/data.js';
 import { findById } from '../utils.js';
+import { uploadUser } from '../utils.js';
+import { updateStats } from '../utils.js';
 
-console.log('quest page');
+const user = JSON.parse(localStorage.getItem('USER'));
+uploadUser(user);
 
 const radios = document.querySelectorAll('input');
 const labels = document.querySelectorAll('label');
 const form = document.querySelector('form');
 const description = document.getElementById('description');
-//const title = document.getElementById('title');
-//const formButton = document.getElementById('form-button');
-
-
 const img = document.getElementById('image');
 
 const params = new URLSearchParams(window.location.search);
@@ -18,11 +17,8 @@ const params = new URLSearchParams(window.location.search);
 const questId = params.get('id');
 const quest = findById(questId, quests);
 
-//document.querySelector('body').append(JSON.stringify(quest));
-
 img.src = '../assets/quests/' + quest.image;
 description.textContent = quest.description;
-
 
 for (let i = 0; i < quest.choices.length; i++) {
     labels[i].append(quest.choices[i].description);
@@ -37,18 +33,13 @@ form.addEventListener('submit', (event) => {
     const choiceId = data.get('quest');
     const choices = quest.choices;
 
-    console.log(choiceId);
-
     const choice = findById(choiceId, choices);
 
     description.textContent = choice.result;
- 
-    const user = JSON.parse(localStorage.getItem('USER'));
 
-    user.hp = user.hp + choice.hp;
-    user.gold = user.gold + choice.gold;
-    user.completed[quest.id] = true;
+    updateStats(user, quest, choice);
 
     localStorage.setItem('USER', JSON.stringify(user));
 });
+
 

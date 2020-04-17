@@ -1,4 +1,27 @@
 body {
     background: lightskyblue;
+    position: relative;
 }
 
+
+
+form {
+    margin: 130px auto;
+    width: 70%;
+    display: grid;
+}
+
+#description {
+    margin-bottom: 40px;
+}
+
+input {
+    margin: 20px;
+}
+
+#form-button {
+    height: 60px;
+    width: 80px;
+    margin: 40px auto;
+    border-radius: 20px;
+}
