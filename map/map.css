@@ -1,7 +1,9 @@
 body {
+    /* width: 100%; */
     margin: 0px;
     padding: 0px;
     background: lightblue;
+    position: absolute;
 }
 
 ul {
@@ -10,9 +12,12 @@ ul {
 
 #map-section {
     margin: 200px 0px;
-    width: 100%;
+    width: 1300px;
     height: 2000px;
-    background-image: url('../assets/map-westeros.jpg'); 
+    text-align: center;
+    background-image: url('../assets/map-westeros.jpg');
+    background-repeat: no-repeat;
+    /* position: relative;  */
 }
 
 a {
@@ -21,11 +26,10 @@ a {
     text-align: center;
     background: red;
     font-size: 18px;
-    padding: 8px 0px;
+    padding: 8px 8px;
     border-radius: 23px;
     box-shadow: 1px 2px 10px 2px;
     transition: 0.3s;
-
 }
 
 a:hover {

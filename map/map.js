@@ -8,6 +8,6 @@ uploadUser(user);
 const ul = document.getElementById('list');
 
 quests.forEach((quest) => {
-    const li = makeQuestLinks(quest);
+    const li = makeQuestLinks(quest, user);
     ul.appendChild(li);
 });

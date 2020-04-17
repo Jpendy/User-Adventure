@@ -58,3 +58,19 @@ export function updateStats(user, quest, choice){
 
 }
 
+
+export function finalMessage(user, p){
+    if (user.hp > 0 && user.gold > 100) {
+        p.textContent = 'You have retired Healthy and Wealthy. You settle down with a family and live out your days in harmony';
+    }
+    else if (user.hp > 0 && user.gold < 101) {
+        p.textContent = 'You have lived but have barely saved any gold. You squander what you have and live out your days as a beggar';
+    }
+    else if (user.hp < 1 && user.gold > 100) {
+        p.textContent = 'You have died. But you died well, and rich. Your descendants live as lords and ladies forevermore';
+    }
+    else {
+        p.textContent = 'You died wretched and poor, unloved and unremembered';
+    }
+
+}
