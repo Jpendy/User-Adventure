@@ -6,6 +6,8 @@ console.log('quest page');
 const radios = document.querySelectorAll('input');
 const labels = document.querySelectorAll('label');
 const form = document.querySelector('form');
+const description = document.getElementById('description');
+//const title = document.getElementById('title');
 //const formButton = document.getElementById('form-button');
 
 
@@ -16,25 +18,19 @@ const params = new URLSearchParams(window.location.search);
 const questId = params.get('id');
 const quest = findById(questId, quests);
 
-document.querySelector('body').append(JSON.stringify(quest));
+//document.querySelector('body').append(JSON.stringify(quest));
 
 img.src = '../assets/quests/' + quest.image;
-
+description.textContent = quest.description;
 
 
 for (let i = 0; i < quest.choices.length; i++) {
     labels[i].append(quest.choices[i].description);
     radios[i].value = quest.choices[i].id;
-
 }
-
-
 
 form.addEventListener('submit', (event) => {
     event.preventDefault();
-
-
-   // const user = JSON.parse(localStorage.getItem('USER'));
 
     const data = new FormData(form);
 
@@ -44,6 +40,8 @@ form.addEventListener('submit', (event) => {
     console.log(choiceId);
 
     const choice = findById(choiceId, choices);
+
+    description.textContent = choice.result;
  
     const user = JSON.parse(localStorage.getItem('USER'));
 
