@@ -32,7 +32,6 @@ form.addEventListener('submit', (event) => {
 
     const choiceId = data.get('quest');
     const choices = quest.choices;
-
     const choice = findById(choiceId, choices);
 
     description.textContent = choice.result;

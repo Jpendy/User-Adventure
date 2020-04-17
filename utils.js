@@ -8,6 +8,7 @@ export function findById(idtoFind, arrayToSearch) {
     }
 }
 
+
 export function uploadUser(user){
 
     const body = document.querySelector('body');
@@ -32,16 +33,6 @@ export function uploadUser(user){
     playerStatsContainer.append(classSpan, nameSpan, healthSpan, goldSpan);
     body.appendChild(playerStatsContainer);
 }
-
-
-// export function updateStats(user) {
-//     const 
-//     user.hp += choice.hp;
-//     user.gold += choice.gold;
-//     user.completed[questId] = true;
-// }
-
-
 
 
 export function updateStats(user, quest, choice){
