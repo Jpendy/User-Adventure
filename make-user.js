@@ -4,7 +4,7 @@ export function makeUser(form){
         name: form.get('name'),
         class: form.get('class'),
         completed: {},
-        hp: 50,
+        hp: 100,
         gold: 3
     };
     return UserObject;

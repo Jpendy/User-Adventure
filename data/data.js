@@ -2,8 +2,8 @@ const monsters = {
     id: 'monsters',
     title: 'A Den of Monsters',
     map: {
-        top: '45%',
-        left: '44%'
+        top: '14%',
+        left: '46%'
     },
     image: 'White-Walker-1.jpg',
     description: `
@@ -47,8 +47,8 @@ const dragon = {
     id: 'dragon',
     title: 'A Problem Dragon',
     map: {
-        top: '57%',
-        left: '67%'
+        top: '60%',
+        left: '50%'
     },
     image: 'dragon.jpg',
     audio: 'dragon.wav',
@@ -66,10 +66,10 @@ const dragon = {
             You high tail it in the opposite direction. Luckily,
             in the panic you find a bag on the ground with 15 gold.
             Unluckily, you trip over a discarded wagon wheel on your
-            way out of town and take 40 hp damage. 
+            way out of town and take 35 hp damage. 
         `,
         hp: -35,
-        gold: 35
+        gold: 15
     }, {
         id: 'fight',
         description: 'Fiiiiiggghhhttt!',
@@ -102,8 +102,8 @@ const treasure = {
     id: 'treasure',
     title: 'The Golden Treasure',
     map: {
-        top: '31%',
-        left: '5%'
+        top: '34%',
+        left: '45%'
     },
     image: 'treasure-chests.png',
     audio: 'treasure-chests.wav',
@@ -143,8 +143,8 @@ const quests = [
         id: 'pleasure',
         title: 'The Bold Folding Pleasure',
         map: {
-            top: '61%',
-            left: '10%'
+            top: '58%',
+            left: '25%'
         },
         image: 'treasure-chests.png',
         audio: 'treasure-chests.wav',

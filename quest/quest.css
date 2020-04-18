@@ -36,9 +36,10 @@ input {
 .linkStyle {
     display: block;
     margin: 90px auto;
-    width: 30%;
+    width: 20%;
     border: 1px solid black;
     padding: 10px;
+    font-size: 10px;
     border-radius: 30px;
     cursor: pointer;
     background: lightsalmon;

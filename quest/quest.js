@@ -53,7 +53,7 @@ form.addEventListener('submit', (event) => {
         location.href = '../map/';
 
     });
-    updateStats(user, quest, choice);
+    // updateStats(user, quest, choice);
 
     if (user.hp < 1){
         link.classList.add('hidden');
