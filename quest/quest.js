@@ -13,14 +13,13 @@ const description = document.getElementById('description');
 const img = document.getElementById('image');
 //const formButton = document.getElementById('form-button');
 const resultSpan = document.getElementById('result-span');
-const backToMapButton = document.getElementById('back-to-map-button');
 
 const params = new URLSearchParams(window.location.search);
 
 const questId = params.get('id');
 const quest = findById(questId, quests);
 
-img.src = '../assets/quests/' + quest.image;
+img.src = '../assets/' + quest.image;
 description.textContent = quest.description;
 
 for (let i = 0; i < quest.choices.length; i++) {

@@ -18,7 +18,7 @@ export function makeQuestLinks(questData, user) {
     if (user.completed[questData.id] === true) {
         a.style.textDecoration = 'line-through';
         a.textContent = questData.title;
-        a.href = '';
+      //  a.href = '';
       //  a.style.visibility = 'hidden';
         a.style.background = 'black';
     }

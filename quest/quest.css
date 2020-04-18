@@ -52,3 +52,10 @@ input {
 .hidden {
     display: none;
 }
+
+img {
+    margin: -60px 20px auto auto;
+    text-align: center;
+    width: 100%;
+    border-radius: 30px;
+}
