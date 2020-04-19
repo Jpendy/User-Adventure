@@ -1,45 +1,51 @@
-const monsters = {
-    id: 'monsters',
-    title: 'A Den of Monsters',
+const Walker = {
+    id: 'walker',
+    title: 'Exploring The North',
     map: {
         top: '14%',
         left: '46%'
     },
     image: 'White-Walker-1.jpg',
     description: `
-        You enter the quest chamber only to be confronted by a hoard of
-        monsters. And they look hungry. What do you do?
+        The snowfall is heavy, and you can barely see where you are riding. You suddenly 
+        come across a Man with blue cold looking skin. It is a White Walker. What do you do?
     `,
     choices: [{
         id: 'negotiate',
-        description: 'Negotiate with them',
+        description: 'Offer to trade with it',
         result: `
-            Knowing the monsters are not too bright, you offer to go buy them all
-            turkey dinners from the village pub. They give you 35 gold for meals
-            that will never be delivered. I hope you can live with yourself. 
+             You offer to trade with it and it smiles a sickly smile, the nods. It suddenly reaches 
+             forward and snatches your wrist, while it raises it's other hand. You see a flash of shiny metal 
+             a feel a sudden blinding pain and before you know it the White Walker is running off, in 
+             posession of your left hand. It drops a bag as you stare in horror at the bloody ruin of your wrist. You open
+             the bag and find 25 gold in it. You look around as the snow falls, and you are alone, once again. You lose 45 hp.
+        `,
+        hp: -45,
+        gold: 25
+    }, {
+        id: 'Attack',
+        description: `Pull out your sword and aim a vicious attack at it's face!`,
+        result: `
+            The White Walker moves quickly and blocks your sword with his own, shattering
+            your blade into a thousand pieces. As you stare dumbly at the remains of your 
+            ruined family sword, the White Walker suddenly thrusts his long blade through 
+            your throat. You fall into the snow, gasping for a breath that will never come, 
+            until all goes black.
+        `,
+        hp: -1000,
+        gold: 0
+    }, {
+        id: 'Run Away!!!!',
+        description: 'Turn and run as fast as you can',
+        result: `
+            You turn and run. The White Walker chases, but you suddenly hear voices yelling!
+            You look right and men are charging out of a cave. Their screaming red bearded leader throws a burning 
+            spear towards the Walker. It dodges the spear but retreats into the the snowfall,
+            disappearing. You are safe. You thank the men and as you leave them, you find a bag
+             near buried in the snow, you open it and find 50 gold. What a day!
         `,
         hp: 0,
-        gold: 35
-    }, {
-        id: 'fight',
-        description: 'Fiiiiiggghhhttt!',
-        result: `
-            Brandishing your sword you let out a warrior's cry and charge into the monsters
-            hacking and slashing. Before long you stand panting gazing across the bodies of
-            your vanquished foes. The bad news is you take 30 hp damage. The good news is you
-            find 50 gold.
-        `,
-        hp: -30,
         gold: 50
-    }, {
-        id: 'run',
-        description: 'Run away like good Sir Robin',
-        result: `
-            As you make a dash for the door a giant spider descends and take a bite of flesh,
-            causing 50 hp damage.
-        `,
-        hp: -50,
-        gold: 0
     }]
 };
 
@@ -137,7 +143,7 @@ const treasure = {
 };
 
 const quests = [
-    monsters, 
+    Walker, 
     treasure,
     dragon, {
         id: 'pleasure',
