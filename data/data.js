@@ -56,7 +56,7 @@ const Dragon = {
         top: '56.6%',
         left: '50.5%'
     },
-    image: 'dragon.jpg',
+    image: 'dany-dragon.jpg',
     // audio: '.wav',
     // action: '.aiff',
     description: `
@@ -109,7 +109,7 @@ const Combat = {
         top: '51%',
         left: '63%'
     },
-    image: '',
+    image: 'tyrion-eyrie.jpg',
     // audio: '.wav',
     // action: '.wav',
     description: `
@@ -121,7 +121,7 @@ const Combat = {
         id: 'Nothing',
         description: 'Do and say nothing, just watch',
         result: `
-        Realizing no one will help him, Tyrion suddenly grabbed a weapon from a nearby guard 
+        Realizing no one will help him, Tyrion suddenly grabs a weapon from a nearby guard 
         and begins running for the door, slashing at two guards. as he runs by you, he stabs you in the
         arm, doing 40 damage.
         `,
