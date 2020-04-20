@@ -2,7 +2,7 @@ const Walker = {
     id: 'walker',
     title: 'Exploring The North',
     map: {
-        top: '14%',
+        top: '6.5%',
         left: '46%'
     },
     image: 'White-Walker-1.jpg',

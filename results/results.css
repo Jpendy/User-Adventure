@@ -8,3 +8,28 @@ body {
     text-align: center;
     font-size: 35px;
 }
+
+
+#play-again {
+margin: 10px auto;
+width: 50%;
+text-align: center;
+}
+
+button {
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 20px;
+    background: lightblue;
+    cursor: pointer;
+    box-shadow: 1px 2px 15px 3px;
+    transition: 1s;
+    font-size: 20px;
+    color: blue;
+}
+
+button:hover {
+    background: black;
+    color: red;
+    box-shadow: 1px 2px 35px 30px;
+}
