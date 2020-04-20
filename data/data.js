@@ -13,6 +13,7 @@ const Walker = {
     choices: [{
         id: 'negotiate',
         description: 'Offer to trade with it',
+        image: 'walker-grab.jpg',
         result: `
              You offer to trade with it and it smiles a sickly smile, then nods. It suddenly reaches 
              forward and snatches your wrist, while it raises its other hand. You see a flash of shiny metal 
@@ -25,6 +26,7 @@ const Walker = {
     }, {
         id: 'Attack',
         description: `Pull out your sword and aim a vicious attack at its face!`,
+        image: 'walker-attack.jpg',
         result: `
             The White Walker moves quickly and blocks your sword with his own, shattering
             your blade into a thousand pieces. As you stare dumbly at the remains of your 
@@ -37,6 +39,7 @@ const Walker = {
     }, {
         id: 'Run Away!!!!',
         description: 'Turn and run as fast as you can',
+        image: 'tormund.jpg',
         result: `
             You turn and run. The White Walker chases, but you suddenly hear voices yelling!
             You look right and men are charging out of a cave. Their screaming red bearded leader throws a burning 
@@ -68,6 +71,7 @@ const Dragon = {
     choices: [{
         id: 'Bend',
         description: 'Bend the knee.',
+        image: 'dany-smiling.jpg',
         result: `
             You climb down from your horse and kneel down, lowering your head. "My queen!" You 
             say, with respect and deference. The queen then tells you that you owe 20 gold as taxes.
@@ -78,6 +82,7 @@ const Dragon = {
     }, {
         id: 'Stand',
         description: '"Tell her that you kneel for no man, or woman, ever. Not even for mom.."',
+        image: 'dragon-fire.jpg',
         result: `
            The woman gets a dark angry look and and lets out a bitter, pitiless laugh. "Do you hear bells 
            ringing" she askes, before suddenly screaming "DROGON! DRACARYS!!" The dragon roars and shoots a
@@ -89,6 +94,7 @@ const Dragon = {
     }, {
         id: 'Spear Attack',
         description: 'Throw you spear at the woman',
+        image: 'spear.jpg',
         result: `
             Angered by her demands, you immediately heft your spear and throw it with all your might towards
             the crazy woman. Your throw takes her directly in the face, killing her instantly. The dragon roars 
@@ -120,6 +126,7 @@ const Combat = {
     choices: [{
         id: 'Nothing',
         description: 'Do and say nothing, just watch',
+        image: 'mad-tyrion.jpg',
         result: `
         Realizing no one will help him, Tyrion suddenly grabs a weapon from a nearby guard 
         and begins running for the door, slashing at two guards. as he runs by you, he stabs you in the
@@ -130,6 +137,7 @@ const Combat = {
     }, {
         id: 'fight',
         description: 'Stand and declare yourself the champion',
+        image: 'battle.jpg',
         result: `
         You stand in single combat against a large heavily armored knight. The armor is too strong for 
         you, and you cannot break through it. After 90 seconds of combat, the knights suddenly moves

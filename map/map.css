@@ -49,3 +49,9 @@ a:hover {
     transform: scale(3.5);
 
 }
+
+#quests-completed-link {
+    margin: 200px auto;
+    position: fixed;
+    text-align: center;
+}

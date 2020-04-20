@@ -51,9 +51,10 @@ form.addEventListener('submit', (event) => {
     link.classList.add('linkStyle');
     resultSpan.appendChild(link);
 
-    link.addEventListener('click', () => {
-        location.href = '../map/';
 
+    link.addEventListener('click', () => {        
+        location.href = '../map/';
+        
     });
     // updateStats(user, quest, choice);
 
@@ -67,10 +68,7 @@ form.addEventListener('submit', (event) => {
         resultsLink.addEventListener('click', () => {
             location.href = '../results';
         });
-    }
-
-    
-    
+    }    
 });
 
 

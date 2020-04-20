@@ -46,6 +46,7 @@ export function updateStats(user, quest, choice){
 
     user.hp = user.hp + choice.hp;
     user.gold = user.gold + choice.gold;
+    
     user.completed[quest.id] = true;
 
     healthSpan.textContent = `Health: ${user.hp}`;
