@@ -141,6 +141,7 @@ const Combat = {
     }, {
         id: 'Sneak',
         description: 'Attempt to be sneaky',
+        image: 'tyrion-and-bronn.jpg',
         result: `
         You declare yourself the champion, then demand the fight take place the next morning at dawn,
         so you may take the evening to fulfill the sacred fight ceremonies that your religion demands.

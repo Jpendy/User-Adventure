@@ -27,7 +27,7 @@ input {
 }
 
 #result-span {
-    margin: 200px auto;
+    margin: 40px auto;
     width: 58%;
     text-align: center;
     font-size: 36px;
@@ -60,4 +60,11 @@ img {
     text-align: center;
     width: 100%;
     border-radius: 30px;
+}
+
+#result-image-section {
+    margin: auto;
+    margin-top: 200px;
+    width: 70%;
+    text-align: center;
 }

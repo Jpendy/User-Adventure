@@ -13,6 +13,7 @@ const description = document.getElementById('description');
 const img = document.getElementById('image');
 //const formButton = document.getElementById('form-button');
 const resultSpan = document.getElementById('result-span');
+const resultImage = document.getElementById('result-image');
 
 const params = new URLSearchParams(window.location.search);
 
@@ -37,6 +38,7 @@ form.addEventListener('submit', (event) => {
     const choice = findById(choiceId, choices);
 
     resultSpan.textContent = choice.result;
+    resultImage.src = '../assets/' + choice.image;
 
     updateStats(user, quest, choice);
 
