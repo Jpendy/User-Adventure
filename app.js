@@ -12,7 +12,7 @@ myForm.addEventListener('submit', (event) => {
     const stringifiedUser = JSON.stringify(user);
     localStorage.setItem('USER', stringifiedUser);
 
-    location.href = '/user-adventure/map/';
+    location.href = '/User-Adventure/map/';
 });
 
 
