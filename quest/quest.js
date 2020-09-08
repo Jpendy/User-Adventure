@@ -69,6 +69,7 @@ form.addEventListener('submit', (event) => {
             location.href = '../results';
         });
     }    
+    location.href = '#top';
 });
 
 
